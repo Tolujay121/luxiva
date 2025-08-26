@@ -1,0 +1,169 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    color: #444;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #000;
+    color: gold;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+nav a {
+    color: gold;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+p, li {
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: gold;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000;
+    color: gold;
+    text-align: center;
+    padding: 15px;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    position: relative;
+}
+.hero ::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: gold;
+    color: black;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    color: #555;
+    font-weight: bold;
+}
+
+.buy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: gold;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 90%;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
